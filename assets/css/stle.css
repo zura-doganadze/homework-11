@@ -1,0 +1,357 @@
+@font-face {
+    font-family: 'Nunito-Regular400', sans-serif;
+    src: url(../fonts/Nunito-Regular400.ttf);
+}
+@font-face {
+    font-family: 'Nunito-Medium500', sans-serif;
+    src: url(../fonts/Nunito-Medium500.ttf);
+}
+@font-face {
+    font-family: 'Nunito-ExtraBold800', sans-serif;
+    src: url(../fonts/Nunito-ExtraBold800.ttf);
+}
+:root {
+    --header-text-color: #00FFF5;
+    --section-text-color:#00FFF5;
+    --third-section-color:#FFFFFF;
+}
+.h {
+    font-family: 'Nunito-ExtraBold800', sans-serif;
+    font-weight: 800;
+    font-size: 28px;
+    line-height: 38px;
+    text-transform: uppercase;
+    color: var(--header-text-color);
+    text-align: center;
+}
+
+
+.conteiner {
+    max-width: 1440px;
+    width: 90%;
+    margin: 0 auto;
+}
+.homes-button {
+    font-family: 'Nunito-Regular400', sans-serif;
+    color: #FFFFFF;
+    background: #00FFF5;
+    border-radius: 30px;
+    padding: 12px 43px;
+    cursor: pointer;
+}
+
+
+
+
+
+a {
+    color: #00FFF5;
+    text-decoration: none;
+}
+body {
+    background: #070521;
+}
+
+header {
+    padding-bottom: 168px;
+}
+.header-ul-wrapper {
+    display: flex;
+    gap: 55px;
+    padding-top: 57px;
+    
+}
+.header-first-child {
+    padding-right: 180px;
+}
+.header-first-child a span {
+    font-family: 'Nunito-ExtraBold800', sans-serif;
+    text-transform: uppercase;
+    font-weight: 800;
+    font-size: 30px;
+    line-height: 41px;
+}
+.header-ul-wrapper li a {
+    cursor: pointer;
+    color: var(--header-text-color);
+    text-transform: none;
+    text-transform: capitalize;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 22px;
+    font-family: 'Nunito-Medium500', sans-serif;
+}
+.header-last-child {
+    padding-left: 180px;
+}
+.header-last-child a span {
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 22px;
+    font-family: 'Nunito-ExtraBold800', sans-serif;
+    border: 1px dashed #0066FF;
+    border-radius: 30px;
+    padding: 15px 30px;
+}
+/* section 1 */
+.first-section-wrapper {
+    display: flex;
+    padding-bottom: 78px;
+}
+.profile-img-conteiner {
+    border: 1px dashed #0066FF;
+    border-radius: 30px;
+    max-height: 450px;
+}
+.profile-img-conteiner img {
+    border-radius: 30px;
+    padding: 30px;
+}
+.profile-img-conteiner img:hover {
+    transform: scale(1.2);
+}
+.firs-section-details-conteiner {
+    padding: 126px 104px 0px 84px;
+}
+.text-title {
+    font-family: 'Nunito-Medium500', sans-serif;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 33px;
+    color: var(--section-text-color);
+    text-transform: capitalize;
+}
+.profile-text {
+    font-family: 'Nunito-Regular400', sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 27px;
+    color: var(--section-text-color);
+    padding: 50px 0px ;
+}
+.first-section-more-button-conteiner {
+    padding-top: 130px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-right: 370px;
+}
+.first-section-more-button-conteiner button {
+    max-width: 50px;
+    border-radius: 30px;
+    padding: 47px 17px 12px 17px;
+    background: inherit;
+    color: #00FFF5;
+    border: 1px solid #00FFF5;
+    cursor: pointer;
+}
+.first-section-more-button-conteiner div {
+    padding-top: 28px;
+}
+.first-section-more-button-conteiner div span {
+    font-family: 'Nunito-Medium500', sans-serif;
+    font-weight: 600;
+    font-size: 30px;
+    line-height: 41px;
+    color: #0066FF;
+}
+.first-section-icon-conteiner {
+    padding-top: 300px;
+}
+.first-section-icon-conteiner a img {
+    padding-bottom: 27px;
+}
+.icon-border {
+    border-right: 1px solid rgba(255, 255, 255, 0.25);
+    height: 300px;
+    margin-right: 10px;
+}
+/* second section */
+.second-section-wrapper {
+    padding-bottom: 150px;
+}
+.second-section-img-wrapper {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    row-gap: 50px;
+    column-gap: 70px;
+    padding: 40px 0px 60px 0px;
+}
+.img-conteiner {
+    position: relative;
+    border: 1px dashed #0066FF;
+    border-radius: 30px;
+    padding: 38px 33px;
+}
+.projact-imgs {
+    max-width: 349px;  
+    transition: transform 0.2s ease;
+}
+.img-conteiner:hover .projact-imgs {
+    transform: scale(1.2);  
+}
+.img-button-conteiner {
+    position: absolute;
+    transition: .2s;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    transition: opacity 0.2s ease;
+}
+.img-conteiner:hover .img-button-conteiner {
+    opacity: 1;
+}
+
+.second-section-img-wrapper div button {
+    background: #0066FF;
+    border-radius: 30px;
+    font-size: 18px;
+    line-height: 25px;
+    color: #FFFFFF;
+    padding: 12px 18px;
+    font-family: 'Nunito-Regular400', sans-serif;
+    cursor: pointer;
+    text-transform: capitalize;
+}
+
+.second-section-button-conteiner {
+    text-align: center;
+}
+/* third section */
+.third-section-conteiner {
+    padding: 40px 0px 150px 0px;
+}
+.third-section-wrapper {
+    display: flex;
+    padding-bottom: 80px;
+}
+.study-time-conteiner {
+    color: var(--third-section-color);
+    transform: rotate(-90deg);
+    font-size: 20px;
+    line-height: 27px;
+    font-family: 'Nunito-Regular400', sans-serif;
+}
+.study-details-conteiner {
+    display: flex;
+    border: 1px dashed #0066FF;
+    border-radius: 30px;
+}
+.study-title-conteiner {
+    padding: 79px 86px 80px 54px;
+    width: 720px;
+    margin-bottom: 30px;
+}
+.study-title-conteiner:first-child {
+    display: inline-block;
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 30px;
+    color: var(--third-section-color);
+    font-family: 'Nunito-ExtraBold800', sans-serif;
+}
+.study-title-conteiner *:nth-child(2) {
+    display: inline-block;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 27px;
+    font-family: 'Nunito-Medium500', sans-serif;
+    color: var(--third-section-color);
+    margin-top: 22px;
+}
+.study-text-conteiner  {
+    padding: 30px 63px;
+}
+.study-text-conteiner p {
+    font-family: 'Nunito-Regular400', sans-serif;
+    border: 1px dashed blue;
+    color: var(--third-section-color);
+    font-size: 16px;
+    line-height: 22px;
+    border: none;
+}
+.study-text-conteiner ul :first-child {
+    padding-bottom: 19px;
+}
+.study-text-conteiner  {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+.study-text-conteiner button {
+    font-size: 16px;
+    line-height: 22px;
+    color: var(--third-section-color);
+    font-family: 'Nunito-Regular400', sans-serif;
+    border: none;
+    background: none;
+    padding-top: 19px;
+    cursor: pointer;
+    text-transform: capitalize;
+}
+.third-section-button {
+    text-align: center;
+}
+/* contact-section */
+.contact-section-span-conteiner {
+    padding: 52px 0px 72px;
+    text-align: center;
+    color: var(--third-section-color);
+    display: flex;
+    flex-direction: column;
+}
+.contact-section-span-conteiner :first-child {
+    font-family: 'Nunito-ExtraBold800', sans-serif;
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 38px;
+}
+.contact-section-span-conteiner :nth-child(2) {
+    font-family: 'Nunito-ExtraBold800', sans-serif;
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 30px;
+    padding-top: 24px;
+}
+.contact-section-wrapper {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.contact-section-conteiner {
+    border: 1px dashed #0066FF;
+    border-radius: 30px;
+    padding: 53px 32px;
+    max-height: 264px;
+}
+.contact-wrapper *:nth-child(2) {
+    padding-top: 23px;
+}
+.contact-wrapper span {
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 27px;
+    color: var(--third-section-color);
+    font-family: 'Nunito-Medium500', sans-serif;
+    padding-left: 30px;
+}
+.contact-icon-conteiner {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 35px;
+}
+.macbook-img {
+    position: absolute;
+}
+.projact-imt {
+    position: relative;
+    padding-left: 43px;
+    padding-top: 10px;
+}
+.contact-section-button {
+    display: flex;
+    justify-content: center;
+    padding: 80px 0px 145px 0px;
+}
